@@ -36,9 +36,11 @@
             // 
             // btProximo
             // 
+            this.btProximo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btProximo.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btProximo.Location = new System.Drawing.Point(222, 15);
-            this.btProximo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btProximo.Location = new System.Drawing.Point(237, 15);
+            this.btProximo.Margin = new System.Windows.Forms.Padding(6);
             this.btProximo.Name = "btProximo";
             this.btProximo.Size = new System.Drawing.Size(258, 50);
             this.btProximo.TabIndex = 1;
@@ -50,7 +52,7 @@
             // 
             this.btCancelar.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancelar.Location = new System.Drawing.Point(107, 387);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(162, 50);
             this.btCancelar.TabIndex = 2;
@@ -61,12 +63,13 @@
             // 
             this.btHistorico.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btHistorico.Location = new System.Drawing.Point(363, 387);
-            this.btHistorico.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btHistorico.Margin = new System.Windows.Forms.Padding(6);
             this.btHistorico.Name = "btHistorico";
             this.btHistorico.Size = new System.Drawing.Size(270, 50);
             this.btHistorico.TabIndex = 3;
             this.btHistorico.Text = "Histórico Sorteado";
             this.btHistorico.UseVisualStyleBackColor = true;
+            this.btHistorico.Click += new System.EventHandler(this.btHistorico_Click);
             // 
             // lblNumero
             // 
@@ -88,9 +91,10 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btProximo);
             this.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmSorteador";
             this.Text = "FrmSorteador";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSorteador_FormClosing);
             this.ResumeLayout(false);
 
         }

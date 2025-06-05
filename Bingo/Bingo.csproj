@@ -58,6 +58,12 @@
     <Compile Include="FrmCartela.Designer.cs">
       <DependentUpon>FrmCartela.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistorico.Designer.cs">
+      <DependentUpon>FrmHistorico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSorteador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <EmbeddedResource Include="FrmCartela.resx">
       <DependentUpon>FrmCartela.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistorico.resx">
+      <DependentUpon>FrmHistorico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSorteador.resx">
       <DependentUpon>FrmSorteador.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +106,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curinga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker-icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonic-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
